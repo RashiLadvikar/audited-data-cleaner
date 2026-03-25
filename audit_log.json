@@ -1,0 +1,396 @@
+[
+    {
+        "step": "standardize_column_names",
+        "column": "all",
+        "action": "renamed_columns",
+        "details": {
+            "old_columns": [
+                "unique_key",
+                "created_date",
+                "closed_date",
+                "agency",
+                "agency_name",
+                "complaint_type",
+                "descriptor",
+                "descriptor_2",
+                "location_type",
+                "incident_zip",
+                "incident_address",
+                "street_name",
+                "cross_street_1",
+                "cross_street_2",
+                "intersection_street_1",
+                "intersection_street_2",
+                "address_type",
+                "city",
+                "landmark",
+                "facility_type",
+                "status",
+                "due_date",
+                "resolution_description",
+                "resolution_action_updated_date",
+                "community_board",
+                "council_district",
+                "police_precinct",
+                "bbl",
+                "borough",
+                "x_coordinate_state_plane",
+                "y_coordinate_state_plane",
+                "open_data_channel_type",
+                "park_facility_name",
+                "park_borough",
+                "vehicle_type",
+                "taxi_company_borough",
+                "taxi_pick_up_location",
+                "bridge_highway_name",
+                "bridge_highway_direction",
+                "road_ramp",
+                "bridge_highway_segment",
+                "latitude",
+                "longitude",
+                "location"
+            ],
+            "new_columns": [
+                "unique_key",
+                "created_date",
+                "closed_date",
+                "agency",
+                "agency_name",
+                "complaint_type",
+                "descriptor",
+                "descriptor_2",
+                "location_type",
+                "incident_zip",
+                "incident_address",
+                "street_name",
+                "cross_street_1",
+                "cross_street_2",
+                "intersection_street_1",
+                "intersection_street_2",
+                "address_type",
+                "city",
+                "landmark",
+                "facility_type",
+                "status",
+                "due_date",
+                "resolution_description",
+                "resolution_action_updated_date",
+                "community_board",
+                "council_district",
+                "police_precinct",
+                "bbl",
+                "borough",
+                "x_coordinate_state_plane",
+                "y_coordinate_state_plane",
+                "open_data_channel_type",
+                "park_facility_name",
+                "park_borough",
+                "vehicle_type",
+                "taxi_company_borough",
+                "taxi_pick_up_location",
+                "bridge_highway_name",
+                "bridge_highway_direction",
+                "road_ramp",
+                "bridge_highway_segment",
+                "latitude",
+                "longitude",
+                "location"
+            ]
+        },
+        "rows_affected": null
+    },
+    {
+        "step": "remove_duplicates",
+        "column": "all",
+        "action": "dropped_duplicate_rows",
+        "details": "Removed 0 duplicate rows",
+        "rows_affected": 0
+    },
+    {
+        "step": "convert_date_columns",
+        "column": "created_date",
+        "action": "converted_to_datetime",
+        "details": "Converted to datetime with 0 invalid values coerced to NaT",
+        "rows_affected": 0
+    },
+    {
+        "step": "convert_date_columns",
+        "column": "closed_date",
+        "action": "converted_to_datetime",
+        "details": "Converted to datetime with 0 invalid values coerced to NaT",
+        "rows_affected": 0
+    },
+    {
+        "step": "convert_date_columns",
+        "column": "resolution_action_updated_date",
+        "action": "converted_to_datetime",
+        "details": "Converted to datetime with 0 invalid values coerced to NaT",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "agency",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "agency_name",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "complaint_type",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "descriptor",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "descriptor_2",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "location_type",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "incident_address",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "street_name",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "cross_street_1",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "cross_street_2",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "intersection_street_1",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "intersection_street_2",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "address_type",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "city",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "landmark",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "facility_type",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "status",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "due_date",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "resolution_description",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "community_board",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "police_precinct",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "borough",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "open_data_channel_type",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "park_facility_name",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "park_borough",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "vehicle_type",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "taxi_company_borough",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "taxi_pick_up_location",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "bridge_highway_name",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "bridge_highway_direction",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "road_ramp",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "bridge_highway_segment",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "trim_text_columns",
+        "column": "location",
+        "action": "trimmed_whitespace",
+        "details": "Removed leading/trailing spaces",
+        "rows_affected": 0
+    },
+    {
+        "step": "standardize_text_case",
+        "column": "agency",
+        "action": "converted_to_title_case",
+        "details": "Standardized text formatting",
+        "rows_affected": 50000
+    },
+    {
+        "step": "standardize_text_case",
+        "column": "complaint_type",
+        "action": "converted_to_title_case",
+        "details": "Standardized text formatting",
+        "rows_affected": 10009
+    },
+    {
+        "step": "standardize_text_case",
+        "column": "borough",
+        "action": "converted_to_title_case",
+        "details": "Standardized text formatting",
+        "rows_affected": 49959
+    },
+    {
+        "step": "standardize_text_case",
+        "column": "status",
+        "action": "converted_to_title_case",
+        "details": "Standardized text formatting",
+        "rows_affected": 0
+    },
+    {
+        "step": "standardize_text_case",
+        "column": "city",
+        "action": "converted_to_title_case",
+        "details": "Standardized text formatting",
+        "rows_affected": 49999
+    }
+]
