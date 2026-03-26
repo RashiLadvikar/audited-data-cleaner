@@ -1,3 +1,5 @@
+**Live Demo → [Click to open app](https://audited-data-cleaner.streamlit.app/)**
+
 # Audited Data Cleaning Pipeline
 
 A production-style Python data cleaning pipeline with a full audit trail — built on the NYC 311 Service Requests dataset (50,000 rows, 44 columns). Every cleaning decision is logged with a timestamp, operation type, column name, and rows affected, producing a reproducible JSON audit report alongside the cleaned data.
